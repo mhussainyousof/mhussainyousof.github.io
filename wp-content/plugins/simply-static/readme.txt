@@ -1,10 +1,10 @@
-=== Simply Static ===
+=== Simply Static - The WordPress Static Site Generator ===
 Contributors: patrickposner
-Tags: HTML, static website generator, static site, secure, fast
+Tags: static site generator, performance, security, jamstack
 Requires at least: 6.3
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 3.1.6.3
+Stable tag: 3.1.7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,27 +65,27 @@ This allows deploying your static website to:
 * Cloudflare Pages
 * Netlify
 * Vercel
-* SFTP to your server
-
 
 = AWS S3 Integration =
 
 Export directly to Amazon AWS S3 from Simply Static Pro. Connect your bucket and run your export.
 
+= SFTP =
+
+Export directly to a remote SFTP server. Connect your server and run your export.
 
 = BunnyCDN Integration =
 
 Export directly to BunnyCDN and get all the benefits of their CDN - including caching, file optimization and DNS management.
 
 
-= Builds and Single Exports =
+= Incremental-, Builds and Single Exports =
 
-Create builds to export only a subset of pages/posts. You can assign a build to every custom post type in your WordPress admin area and export them.
+Use Incremental Exports to update only changes to your static website. No configuration needed, just choose Update and run the export.
 
-Never sit back and watch a full static export running, instead run a complete export once and then use builds to export the changes as fast as possible.
+Use Build Exports to quickly roll out global changes to your static website. Want to update your style.css file? Or a new plugin? Use a build export.
 
-You can also export single pages/posts after changed something.
-
+Use Single Exports to quickly publish new pages and posts to your static site. This also supports scheduled posts.
 
 = Forms =
 
@@ -127,6 +127,10 @@ Automatically minfiy HTML, CSS and JavaScript files on your static site.
 
 We can even minify inline CSS & JavaScript.
 
+= Image Optimization =
+
+Automatically optimize images on your static website with our ShortPixel API integration.
+
 = Optimization =
 
 Replace default WordPress paths and completely hide that you are using WordPress behind the scenes.
@@ -158,9 +162,15 @@ You can get the pro version [here](https://simplystatic.com/pro/).
 
 = Tutorials =
 
-I publish new tutorials on how to work with Simply Static and other tools on my blog.
+We publish new tutorials on how to work with Simply Static and other tools on our blog.
 
-You can check the current tutorials [here](https://simplystatic.com/tutorials/)
+You can check the latest tutorials [here](https://simplystatic.com/tutorials/)
+
+= Documentation =
+
+We have a super extensive documentation that covers every aspect of Simply Static and Simply Static Pro.
+
+You can check the documentation [here](https://docs.simplystatic.com)
 
 
 == Installation ==
@@ -222,6 +232,56 @@ Simply Static creates a static copy of your WordPress site that is intended to b
 3. Diagnostics
 
 == Changelog ==
+
+= 3.1.7.4 =
+
+* fixed PHP notice related to server_cron setting
+* fixed basic auth validation in admin area
+
+= 3.1.7.3 =
+
+* added new integration settings page
+* added admin bar as integration + toggle to enable/disable it
+* improved performance for diagnostics check (caching)
+* removed unused http_request_args filter
+* MU network page UI fixes
+* added quick links to plugins page
+* added option to whitelist plugins in diagnostics
+* restructed "Misc" settings and renamed to "Debug"
+* added option to use server-side cron job
+* adapted Jetpack integration to new integration class
+
+= 3.1.7.2 =
+
+* added Jetpack integration
+* removed DO integration admin UI code
+* added progress bar to admin bar
+* Diagnostics sub menu page + notification center
+* removed can_wp_make_requests_to_itself() check
+* fixed PHP notices for PHP 8.3 compatibility
+* simplified log file output for certain deployment options
+* composer dependencies updated
+
+
+= 3.1.7.1 =
+
+* improved hash validation for record storage in DB
+* smaller UI improvements
+* auto-generate index.html for feed URLs
+
+= 3.1.7 =
+
+* Official PHP 8.2 and 8.3 support + fixes for various PHP notices
+* fixed saving multiline settings savings process
+* improved default settings on first installation + reset
+* extended the match_tags list for better XML support
+* improved URL handling when creating 404 pages
+* automated 404 page handling for various deployment options
+* added cache detection solution as part of diagnostics
+* added incompatible plugin detection as part of diagnostics
+* added notification logic if tests in diagnostics fail
+* improved XML sitemap handling in all SEO integrations
+* auto-include robots.txt file if exists
 
 = 3.1.6.3 =
 

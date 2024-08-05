@@ -32,9 +32,7 @@ class Url_Extractor {
 		'base'    => array( 'href' ),
 		'img'     => array( 'src', 'usemap', 'longdesc', 'dynsrc', 'lowsrc', 'srcset', 'data-src', 'data-bg' ),
 		'picture' => array( 'src', 'srcset' ),
-		'source'  => array( 'srcset' ),
 		'amp-img' => array( 'src', 'srcset' ),
-		'link'    => array( 'href' ),
 
 		'applet' => array( 'code', 'codebase', 'archive', 'object' ),
 		'area'   => array( 'href' ),
@@ -85,6 +83,7 @@ class Url_Extractor {
 
 		'meta' => array( 'content' ),
 		'link' => array( 'href' ),
+		'atom' => array( 'href' )
 	);
 
 	// /** @const */
@@ -317,7 +316,10 @@ class Url_Extractor {
 
 					if ( $extracted_url !== '' ) {
 						$updated_extracted_url = $this->add_to_extracted_urls( $extracted_url );
-						$attribute_value       = str_replace( $extracted_url, $updated_extracted_url, $attribute_value );
+
+						if ( ! is_null( $updated_extracted_url ) ) {
+							$attribute_value = str_replace( $extracted_url, $updated_extracted_url, $attribute_value );
+						}
 					}
 				}
 				$tag->$attribute_name = $attribute_value;

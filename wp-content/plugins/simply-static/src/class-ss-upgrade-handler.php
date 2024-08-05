@@ -80,10 +80,12 @@ class Upgrade_Handler {
 			'relative_path'                 => '',
 			'destination_url_type'          => 'relative',
 			'debugging_mode'                => true,
+			'server_cron'                   => false,
+			'whitelist_plugins'             => '',
 			'http_basic_auth_username'      => '',
 			'http_basic_auth_password'      => '',
 			'origin_url'                    => '',
-			'force_replace_url'             => false,
+			'force_replace_url'             => true,
 			'clear_directory_before_export' => false,
 			'ssh_security_token'            => '',
 			'ssh_use_forms'                 => true,
@@ -109,6 +111,7 @@ class Upgrade_Handler {
 			'github_branch'                 => 'main',
 			'github_webhook_url'            => '',
 			'github_folder_path'            => '',
+			'github_throttle_requests'      => false,
 			'aws_region'                    => 'us-east-2',
 			'aws_access_key'                => '',
 			'aws_access_secret'             => '',
@@ -116,10 +119,6 @@ class Upgrade_Handler {
 			'aws_subdirectory'              => '',
 			'aws_distribution_id'           => '',
 			'aws_empty'                     => false,
-			'digitalocean_key'              => '',
-			'digitalocean_secret'           => '',
-			'digitalocean_bucket'           => '',
-			'digitalocean_region'           => '',
 			'fix_cors'                      => 'allowed_http_origins',
 			'static_url'                    => '',
 			'use_forms'                     => false,
@@ -144,7 +143,7 @@ class Upgrade_Handler {
 			'minify_inline_css'             => false,
 			'minify_js'                     => false,
 			'minify_inline_js'              => false,
-			'generate_404'                  => false,
+			'generate_404'                  => true,
 			'wp_content_folder'             => '',
 			'wp_includes_folder'            => '',
 			'wp_uploads_folder'             => '',
@@ -184,16 +183,16 @@ class Upgrade_Handler {
 		if ( null === $version ) {
 			Page::create_or_update_table();
 			self::set_default_options();
-		}
+		} else {
+			if ( version_compare( $version, SIMPLY_STATIC_VERSION, '!=' ) ) {
+				// Sync database.
+				Page::create_or_update_table();
 
-		if ( version_compare( $version, SIMPLY_STATIC_VERSION, '!=' ) ) {
-			// Sync database.
-			Page::create_or_update_table();
-
-			// Update version.
-			self::$options
-				->set( 'version', SIMPLY_STATIC_VERSION )
-				->save();
+				// Update version.
+				self::$options
+					->set( 'version', SIMPLY_STATIC_VERSION )
+					->save();
+			}
 		}
 	}
 

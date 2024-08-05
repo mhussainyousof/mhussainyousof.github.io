@@ -2,21 +2,21 @@
     "packages": [
         {
             "name": "a5hleyrich/wp-background-processing",
-            "version": "1.2",
-            "version_normalized": "1.2.0.0",
+            "version": "1.3.1",
+            "version_normalized": "1.3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deliciousbrains/wp-background-processing.git",
-                "reference": "a0018fea79b8e752f41b6a26d6b9b3397d15c52e"
+                "reference": "6d1e48165e461260075b9f161b3861c7278f71e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deliciousbrains/wp-background-processing/zipball/a0018fea79b8e752f41b6a26d6b9b3397d15c52e",
-                "reference": "a0018fea79b8e752f41b6a26d6b9b3397d15c52e",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-background-processing/zipball/6d1e48165e461260075b9f161b3861c7278f71e7",
+                "reference": "6d1e48165e461260075b9f161b3861c7278f71e7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=7.0"
             },
             "require-dev": {
                 "phpcompatibility/phpcompatibility-wp": "*",
@@ -28,7 +28,7 @@
             "suggest": {
                 "coenjacobs/mozart": "Easily wrap this library with your own prefix, to prevent collisions when multiple plugins use this library"
             },
-            "time": "2023-07-20T15:40:50+00:00",
+            "time": "2024-02-28T13:39:06+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -49,30 +49,30 @@
             "description": "WP Background Processing can be used to fire off non-blocking asynchronous requests or as a background processing tool, allowing you to queue tasks.",
             "support": {
                 "issues": "https://github.com/deliciousbrains/wp-background-processing/issues",
-                "source": "https://github.com/deliciousbrains/wp-background-processing/tree/1.2"
+                "source": "https://github.com/deliciousbrains/wp-background-processing/tree/1.3.1"
             },
             "install-path": "../a5hleyrich/wp-background-processing"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v5.4.35",
-            "version_normalized": "5.4.35.0",
+            "version": "v5.4.40",
+            "version_normalized": "5.4.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "9e615d367e2bed41f633abb383948c96a2dbbfae"
+                "reference": "ea43887e9afd2029509662d4f95e8b5ef6fc9bbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/9e615d367e2bed41f633abb383948c96a2dbbfae",
-                "reference": "9e615d367e2bed41f633abb383948c96a2dbbfae",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ea43887e9afd2029509662d4f95e8b5ef6fc9bbb",
+                "reference": "ea43887e9afd2029509662d4f95e8b5ef6fc9bbb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
                 "symfony/polyfill-php80": "^1.16"
             },
-            "time": "2024-01-23T13:51:25+00:00",
+            "time": "2024-05-31T14:33:22+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -104,7 +104,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v5.4.35"
+                "source": "https://github.com/symfony/css-selector/tree/v5.4.40"
             },
             "funding": [
                 {
@@ -124,17 +124,17 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "cd4226d140ecd3d0f13d32ed0a4a095ffe871d2f"
+                "reference": "c027e6a3c6aee334663ec21f5852e89738abc805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/cd4226d140ecd3d0f13d32ed0a4a095ffe871d2f",
-                "reference": "cd4226d140ecd3d0f13d32ed0a4a095ffe871d2f",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/c027e6a3c6aee334663ec21f5852e89738abc805",
+                "reference": "c027e6a3c6aee334663ec21f5852e89738abc805",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
             "suggest": {
                 "ext-iconv": "For best performance"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-05-31T15:07:36+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -187,7 +187,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -207,17 +207,17 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "32a9da87d7b3245e09ac426c83d334ae9f06f80f"
+                "reference": "64647a7c30b2283f5d49b874d84a18fc22054b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/32a9da87d7b3245e09ac426c83d334ae9f06f80f",
-                "reference": "32a9da87d7b3245e09ac426c83d334ae9f06f80f",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/64647a7c30b2283f5d49b874d84a18fc22054b7a",
+                "reference": "64647a7c30b2283f5d49b874d84a18fc22054b7a",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
             "suggest": {
                 "ext-intl": "For best performance"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-05-31T15:07:36+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -268,7 +268,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -288,17 +288,17 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "bc45c394692b948b4d383a08d7753968bed9a83d"
+                "reference": "a95281b0be0d9ab48050ebd988b967875cdb9fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/bc45c394692b948b4d383a08d7753968bed9a83d",
-                "reference": "bc45c394692b948b4d383a08d7753968bed9a83d",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/a95281b0be0d9ab48050ebd988b967875cdb9fdb",
+                "reference": "a95281b0be0d9ab48050ebd988b967875cdb9fdb",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
             "suggest": {
                 "ext-intl": "For best performance"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-05-31T15:07:36+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -352,7 +352,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -372,17 +372,17 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fd22ab50000ef01661e2a31d850ebaa297f8e03c",
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c",
                 "shasum": ""
             },
             "require": {
@@ -394,7 +394,7 @@
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-06-19T12:30:46+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -435,7 +435,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -455,23 +455,23 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "861391a8da9a04cbad2d232ddd9e4893220d6e25"
+                "reference": "10112722600777e02d2745716b70c5db4ca70442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/861391a8da9a04cbad2d232ddd9e4893220d6e25",
-                "reference": "861391a8da9a04cbad2d232ddd9e4893220d6e25",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/10112722600777e02d2745716b70c5db4ca70442",
+                "reference": "10112722600777e02d2745716b70c5db4ca70442",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-06-19T12:30:46+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -511,7 +511,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -531,23 +531,23 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.29.0",
-            "version_normalized": "1.29.0.0",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b"
+                "reference": "77fa7995ac1b21ab60769b7323d600a991a90433"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
-                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/77fa7995ac1b21ab60769b7323d600a991a90433",
+                "reference": "77fa7995ac1b21ab60769b7323d600a991a90433",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
-            "time": "2024-01-29T20:11:03+00:00",
+            "time": "2024-05-31T15:07:36+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -594,7 +594,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -797,17 +797,17 @@
         },
         {
             "name": "voku/simple_html_dom",
-            "version": "4.8.8",
-            "version_normalized": "4.8.8.0",
+            "version": "4.8.10",
+            "version_normalized": "4.8.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/simple_html_dom.git",
-                "reference": "9ef90f0280fe16054c117e04ea86617ce0fcdd35"
+                "reference": "716822ed52ed3a1881542be07a786270de390e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/9ef90f0280fe16054c117e04ea86617ce0fcdd35",
-                "reference": "9ef90f0280fe16054c117e04ea86617ce0fcdd35",
+                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/716822ed52ed3a1881542be07a786270de390e99",
+                "reference": "716822ed52ed3a1881542be07a786270de390e99",
                 "shasum": ""
             },
             "require": {
@@ -815,7 +815,7 @@
                 "ext-libxml": "*",
                 "ext-simplexml": "*",
                 "php": ">=7.0.0",
-                "symfony/css-selector": "~3.0 || ~4.0 || ~5.0 || ~6.0"
+                "symfony/css-selector": "~3.0 || ~4.0 || ~5.0 || ~6.0 || ~7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
@@ -823,7 +823,7 @@
             "suggest": {
                 "voku/portable-utf8": "If you need e.g. UTF-8 fixed output."
             },
-            "time": "2023-02-12T16:15:15+00:00",
+            "time": "2024-07-03T16:05:14+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -857,7 +857,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/simple_html_dom/issues",
-                "source": "https://github.com/voku/simple_html_dom/tree/4.8.8"
+                "source": "https://github.com/voku/simple_html_dom/tree/4.8.10"
             },
             "funding": [
                 {
